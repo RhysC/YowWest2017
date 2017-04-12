@@ -1,0 +1,33 @@
+{
+  "name": "YowWest2017ServerlessDemo",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RhysC/YowWest2017"
+  },
+  "keywords": [],
+  "author": "@RhysC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RhysC/YowWest2017/issues"
+  },
+  "homepage": "https://github.com/RhysC/YowWest2017#readme",
+  "description": "Demo for YOW West 2017 - Introduction to Serverless",
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "env": "env",
+    "lint": "./node_modules/.bin/eslint */*.js",
+    "pretest": "npm run lint",
+    "test": "./node_modules/.bin/mocha tests/",
+    "version:patch": "npm version patch",
+    "git:pushtag": "git push --tags origin HEAD:master",
+    "tag": "npm run version:patch && npm run git:pushtag"
+  }
+}
