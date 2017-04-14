@@ -25,7 +25,7 @@
     "env": "env",
     "lint": "./node_modules/.bin/eslint */*.js",
     "pretest": "npm run lint",
-    "test": "./node_modules/.bin/mocha tests/",
+    "test": "./node_modules/mocha/bin/mocha tests/",
     "version:patch": "npm version patch",
     "git:pushtag": "git push --tags origin HEAD:master",
     "tag": "npm run version:patch && npm run git:pushtag"
