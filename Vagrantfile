@@ -75,7 +75,6 @@ SCRIPT
      #ln -s /home/vagrant/node_modules/ node_modules
      pip install --upgrade --user awscli
      npm install --global serverless
-     npm install --global mocha
    SHELL
 
 end
